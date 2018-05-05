@@ -1,5 +1,5 @@
 from jsonschema import validate
-{
+schema = {
         "$schema":"http://json-schema.org#",
         "type":"object",
         "properties": {
@@ -27,4 +27,15 @@ from jsonschema import validate
             }
         }
 
-
+validate(http://json-schema.org/
+  		{
+		  "colors": [
+		    {
+		      "color": "black",
+		      "category": "hue",
+		      "type": "primary",
+		      "code": {
+		        "rgba": [255,255,255,1],
+		        "hex": "#000"
+		      }
+}, schema)
