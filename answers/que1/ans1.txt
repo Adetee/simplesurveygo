@@ -1,0 +1,13 @@
+1) REST stands for REpresentational State Transfer.
+2) Restful services are rest architecture based services in which everything is a resource.
+3) Restuful services are light weight, highly scalable and and highly maintainable and are used to create APIs for web based applications.
+4) In REST, a REST Server provides access to resources and the REST client accesses and presents the resources. Each resource is identified by IDs. REST uses various representations to represent a resource like Text, JSON and XML.
+5) REST also uses various HTTP methods. Commonly used methods are:
+   a) GET : It provides read only access to resource.
+   b) PUT : It is used to create a new resource
+   c) POST : Create a new resource or update the existing resource
+   d) DELETE : Used to delete a resource
+   e) OPTIONS : Used to get supported operations on a resource 
+
+The regular services are set of protocols which is deployed over an application software to communicate with other software components and provide interface to services that application provides to several other customers.
+REST mostly uses HTTP protocol the way it was intended whereas the other services send binary or XML messages to a designated port, not using differences in HTTP methods or URLs at all. Also the other services like SOAP which is a protocol for exchanging structured information in the implementation of web services. It relies of XML as its message format and other applicaion layer protocol for message transmission. 

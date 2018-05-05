@@ -1,0 +1,28 @@
+Signifivance of resource class in flask-restful
+1) Resource class is the main building block provided by flast-restful which will contail resource objects
+   Eg:  from flask_restful import Resource
+
+	class Foo(Resource):
+    		def get(self):
+        		pass
+    		def post(self):
+        		pass 
+    
+2) It gives easy access to multiple HTTP methods just by defining methods on your resource
+3) Multiple URLs can be passed through resources .Each one will be routed to the resource
+
+   Eg: api.add_resource(HelloWorld,
+    			'/',
+    			'/hello')
+
+
+
+Job of dispatch_request method: 
+Whenever the request is dispatched a new instance of the class is created and the dispatch_request() method is called with the parameters from the URL. The class itself is instantiated with the parameters passed to the as_view() function.
+Subclasses have to override this method to implement the actual view function code.
+dispatch_request does the request dispatching. Matches the URL and returns the return value of the view or error handler. This does not have to be a response object. In order to convert the return value to a proper response object, call make_response().
+
+Eg: def dispatch_request(self, name):
+        return 'Hello %s!' % name
+
+
